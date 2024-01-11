@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="icon" type="image/x-icon" href="./public/header-icon.svg" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Honda Dealer</title>
+	</head>
+	<body>
+		<header class="flex justify-center items-center gap-8 h-[148px]">
+			<img src="./src/images/header-icon.svg" alt="honda logo" />
+			<div>
+				<div>
+					<p class="text-2xl font-sansBold">Your Honda Dealer</p>
+					<p class="text-2xl">Sales: 000-000-0000</p>
+				</div>
+				<div class="pt-2 flex gap-2">
+					<img src="./src/images/header-socials.png" alt="honda logo" />
+					<button
+						class="w-[100px] text-white bg-gradient-to-t from-[#d5bcbc] to-[#c90000] border-[1px] border-red-500"
+					>
+						Live Chat
+					</button>
+				</div>
+			</div>
+		</header>
+		<nav class="bg-gray01 h-[50px] flex justify-end items-center">
+			<button>
+				<img
+					src="./src/images/burger-menu.svg"
+					alt="burger menu"
+					class="mr-[18px]"
+				/>
+			</button>
+		</nav>
+		<section
+			class="text-gray01 flex flex-col items-center h-[375px] relative leading-tight"
+		>
+			<p
+				class="font-semibold text-[44px] md:text-[60px] pt-[30px] md:pt-[40px]"
+			>
+				Welcome home.
+			</p>
+			<p class="text-lg w-[33ch] md:w-fit text-center mt-[-6px] md:mt-0">
+				Let our family help you find the perfect vehicle for your family.
+			</p>
+			<button
+				class="text-lg text-white bg-blue01 h-[50px] w-[228px] flex justify-center items-center rounded font-bold mt-3 z-10"
+			>
+				Search New Inventory
+			</button>
+			<img
+				src="./src/images/car.png"
+				alt="car image"
+				class="absolute bottom-0 h-[160px] md:h-[210px]"
+			/>
+			<div
+				class="bg-gradient-to-t from-[#c7c7c7] to-[#b6b7ba] h-[70px] w-full absolute bottom-0 -z-10 blur-sm"
+			></div>
+		</section>
+		<main class="bg-gray02 pt-[25px] pb-[45px] px-[15px]">
+			<nav
+				class="flex flex-col items-center font-sansBold text-white text-2xl gap-3 pb-[60px]"
+			>
+				<button class="w-[345px] h-[60px] bg-blue01 rounded">
+					New Inventory
+				</button>
+				<button class="w-[345px] h-[60px] bg-blue01 rounded">
+					Pre-Owned Inventory
+				</button>
+				<button class="w-[345px] h-[60px] bg-blue01 rounded">
+					Certified Pre-Owned
+				</button>
+				<button class="w-[345px] h-[60px] bg-blue01 rounded">
+					New Specials
+				</button>
+			</nav>
+			<div class="bg-white rounded flex flex-col items-center">
+				<nav
+					class="text-gray04 text-xl flex flex-col items-center gap-3 pb-[100px]"
+				>
+					<h2 class="text-gray03 font-sansBold text-3xl pt-[50px]">
+						Let Us Help You
+					</h2>
+					<a href="">Quick Quote</a>
+					<a href="">Scheduled Service</a>
+					<a href="">Get Pre-Approved</a>
+					<a href="">Honda E-Store</a>
+					<a href="">Collision Center</a>
+					<a href="">Employment Center</a>
+				</nav>
+				<h2 class="text-gray03 font-sansBold text-3xl">Current Offers</h2>
+				<a href="" class="text-xl pb-[60px] text-gray04"
+					>View all offers</a
+				>
+				<article
+					class="text-lg flex flex-col items-center gap-2 pb-[75px]"
+				>
+					<img src="./src/images/car-1.png" alt="honda accord image" />
+					<p class="font-sansBold text-gray03">
+						2015 Honda Accord Sedan CVT LX
+					</p>
+					<p class="text-gray03">Lease for $199/mo. for 36 months</p>
+					<a href="" class="text-gray04">See details</a>
+				</article>
+				<article
+					class="text-lg flex flex-col items-center gap-2 pb-[75px]"
+				>
+					<img src="./src/images/car-2.png" alt="honda accord image" />
+					<p class="font-sansBold text-gray03">
+						2015 Honda CR-V CVT 2WD LX
+					</p>
+					<p class="text-gray03">Lease for $239/mo. for 39 months</p>
+					<a href="" class="text-gray04">See details</a>
+				</article>
+				<article
+					class="text-lg flex flex-col items-center gap-2 pb-[75px]"
+				>
+					<img src="./src/images/car-1.png" alt="honda accord image" />
+					<p class="font-sansBold text-gray03">2015 Honda Odyssey LX</p>
+					<p class="text-gray03">Lease for $269/mo. for 36 months</p>
+					<a href="" class="text-gray04">See details</a>
+				</article>
+			</div>
+		</main>
+		<section
+			class="h-[560px] bg-gray01 flex flex-col justify-center items-center gap-5"
+		>
+			<img
+				src="./src/images/promo-newfit.jpg"
+				alt="promotional image of new car"
+				class="w-[340px]"
+			/>
+			<img
+				src="./src/images/promo-leasereturn.png"
+				alt="promotional image of lease return"
+				class="w-[340px]"
+			/>
+		</section>
+		<footer>
+			<div
+				class="flex flex-col items-center text-center gap-8 pt-[45px] pb-[55px]"
+			>
+				<p class="text-lg text-gray03 w-[23ch]">
+					© 2015. Your Honda Dealer
+					<a href="">Privacy</a>
+					<span class="px-2">|</span>
+					<a href="">Contact Us</a>
+				</p>
+				<a href="">
+					<img src="./src/images/pm-logo.png" alt="pixel motion logo" />
+				</a>
+			</div>
+			<nav
+				class="pt-[50px] pb-[70px] bg-[#017cc2] text-lg text-white px-7 text-center"
+			>
+				<a href="">Accord Coupe</a>
+				<span class="px-1">|</span>
+				<a href="">Accord Sedan</a>
+				<span class="px-1">|</span>
+				<a href="">Civic Coupe</a>
+				<span class="px-1">|</span>
+				<a href="">Civic GX</a>
+				<span class="px-1">|</span>
+				<a href="">Civic Hybrid</a>
+				<span class="px-1">|</span>
+				<a href="">Civic Sedan</a>
+				<span class="px-1">|</span>
+				<a href="">Civic SI Coupe</a>
+				<span class="px-1">|</span>
+				<a href="">Civic SI Sedan</a>
+				<span class="px-1">|</span>
+				<a href="">Crosstour</a>
+				<span class="px-1">|</span>
+				<a href="">CR-V</a>
+				<span class="px-1">|</span>
+				<a href="">CR-Z</a>
+				<span class="px-1">|</span>
+				<a href="">Element</a>
+				<span class="px-1">|</span>
+				<a href="">FXC Clarity</a>
+				<span class="px-1">|</span>
+				<a href="">Fit</a>
+				<span class="px-1">|</span>
+				<a href="">Fit EV</a>
+				<span class="px-1">|</span>
+				<a href="">Insight</a>
+				<span class="px-1">|</span>
+				<a href="">Odyssey</a>
+				<span class="px-1">|</span>
+				<a href="">Pilot</a>
+				<span class="px-1">|</span>
+				<a href="">Ridgeline</a>
+				<span class="px-1">|</span>
+				<a href="">$2000</a>
+			</nav>
+		</footer>
+	</body>
+</html>
