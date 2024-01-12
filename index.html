@@ -12,23 +12,29 @@
 	</head>
 	<body>
 		<header
-			class="flex justify-center md:justify-between md:px-[30px] items-center gap-8 md:gap-0 h-[148px]"
+			class="flex justify-center md:justify-between md:px-[30px] items-center gap-8 md:gap-0 h-[148px] 2xl:px-[120px]"
 		>
 			<img src="./src/images/header-icon.svg" alt="honda logo" />
 			<div
 				class="flex flex-col md:flex-row md:justify-between md:flex-1 md:items-center"
 			>
-				<p class="text-2xl font-sansBold">Your Honda Dealer</p>
-				<div class="flex flex-col gap-2">
-					<p class="text-2xl font-sansBold">Sales: 000-000-0000</p>
-					<nav class="flex justify-between md:pl-[10px]">
+				<p class="text-2xl 2xl:text-[32px] font-sansBold">
+					Your Honda Dealer
+				</p>
+				<div class="flex flex-col 2xl:flex-row gap-2 md:gap-0">
+					<p class="text-2xl 2xl:text-[32px] md:font-sansBold">
+						Sales: 000-000-0000
+					</p>
+					<nav
+						class="flex justify-between md:pl-[10px] 2xl:p-0 2xl:items-center"
+					>
 						<img
 							src="./src/images/header-socials.png"
 							alt="social icons"
-							class="w-fit h-[25px]"
+							class="w-fit h-[25px] 2xl:px-5"
 						/>
 						<button
-							class="w-[100px] h-fit text-sm self-end text-white bg-gradient-to-t from-[#d5bcbc] to-[#c90000] border-[1px] border-red-500"
+							class="w-[100px] h-fit text-sm 2xl:text-base self-end 2xl:self-auto text-white bg-gradient-to-t from-[#c90000] to-[#d5bcbc] border-[1px] border-red-500"
 						>
 							Live Chat
 						</button>
@@ -36,62 +42,99 @@
 				</div>
 			</div>
 		</header>
-		<nav class="bg-gray01 h-[50px] flex justify-end items-center">
-			<button>
-				<img
-					src="./src/images/burger-menu.svg"
-					alt="burger menu"
-					class="mr-[18px]"
-				/>
+		<nav
+			class="bg-gray01 h-[50px] hidden 2xl:flex justify-end items-center 2xl:px-[120px] uppercase text-white 2xl:justify-start 2xl:gap-[60px]"
+		>
+			<a href="">home</a>
+			<a href="">inventory</a>
+			<a href="">specials</a>
+			<a href="">finance</a>
+			<a href="">service</a>
+			<a href="">parts</a>
+			<a href="">collision center</a>
+			<a href="">dealership</a>
+			<a href="">contact us</a>
+			<a href="">map</a>
+		</nav>
+		<nav
+			class="bg-gray01 h-[50px] flex justify-end items-center 2xl:px-[120px] uppercase text-white 2xl:hidden"
+		>
+			<button class="mr-[18px]">
+				<img src="./src/images/burger-menu.svg" alt="burger menu" />
 			</button>
 		</nav>
 		<section
-			class="text-gray01 flex flex-col items-center h-[375px] relative leading-tight"
+			class="text-gray01 flex flex-col items-center h-[375px] 2xl:h-[500px] relative leading-tight 2xl:px-[120px] 2xl:items-start"
 		>
 			<p
-				class="font-semibold text-[44px] md:text-[60px] pt-[30px] md:pt-[40px]"
+				class="font-semibold text-[44px] md:text-[60px] pt-[30px] md:pt-[40px] 2xl:text-[90px]"
 			>
 				Welcome home.
 			</p>
-			<p class="text-lg w-[33ch] md:w-fit text-center mt-[-6px] md:mt-0">
+			<p
+				class="text-lg w-[33ch] md:w-fit text-center mt-[-6px] md:mt-0 2xl:text-[24px] leading-tight"
+			>
 				Let our family help you find the perfect vehicle for your family.
 			</p>
 			<button
-				class="text-lg text-white bg-blue01 h-[50px] w-[228px] flex justify-center items-center rounded font-bold mt-3 z-10"
+				class="text-lg text-white bg-blue01 h-[50px] 2xl:h-[60px] w-[228px] 2xl:w-[280px] flex justify-center items-center rounded font-bold mt-3 z-10 2xl:text-[24px]"
 			>
 				Search New Inventory
 			</button>
-			<img
-				src="./src/images/car.png"
-				alt="car image"
-				class="absolute bottom-0 h-[160px] md:h-[210px]"
-			/>
 			<div
-				class="bg-gradient-to-t from-[#c7c7c7] to-[#b6b7ba] h-[70px] w-full absolute bottom-0 -z-10 blur-sm"
+				class="absolute bottom-0 self-center flex justify-end items-end gap-2"
+			>
+				<img
+					src="./src/images/car.png"
+					alt="car image"
+					class="h-[160px] md:h-[210px]"
+				/>
+				<img
+					src="./src/images/family.png"
+					alt="family photo"
+					class="hidden 2xl:inline"
+				/>
+			</div>
+			<div
+				class="bg-gradient-to-t from-[#c7c7c7] to-[#b6b7ba] h-[70px] w-full absolute bottom-0 -z-10 blur-sm 2xl:mx-[-120px]"
 			></div>
 		</section>
-		<main class="bg-gray02 pt-[25px] pb-[45px] px-[15px]">
+		<main
+			class="bg-gray02 pt-[25px] pb-[45px] 2xl:pt-[65px] 2xl:pb-[110px] px-[15px] 2xl:px-[120px]"
+		>
 			<nav
-				class="flex flex-col items-center font-sansBold text-white text-2xl gap-3 pb-[60px]"
+				class="flex flex-col 2xl:flex-row items-center font-sansBold text-white text-2xl 2xl:text-3xl gap-3 2xl:gap-[30px] pb-[60px] 2xl:pb-[75px]"
 			>
-				<button class="w-[345px] md:w-[722px] h-[60px] bg-blue01 rounded">
+				<button
+					class="w-[345px] md:w-[722px] 2xl:w-[390px] h-[60px] 2xl:h-[90px] bg-blue01 rounded"
+				>
 					New Inventory
 				</button>
-				<button class="w-[345px] md:w-[722px] h-[60px] bg-blue01 rounded">
+				<button
+					class="w-[345px] md:w-[722px] 2xl:w-[390px] h-[60px] 2xl:h-[90px] bg-blue01 rounded"
+				>
 					Pre-Owned Inventory
 				</button>
-				<button class="w-[345px] md:w-[722px] h-[60px] bg-blue01 rounded">
+				<button
+					class="w-[345px] md:w-[722px] 2xl:w-[390px] h-[60px] 2xl:h-[90px] bg-blue01 rounded"
+				>
 					Certified Pre-Owned
 				</button>
-				<button class="w-[345px] md:w-[722px] h-[60px] bg-blue01 rounded">
+				<button
+					class="w-[345px] md:w-[722px] 2xl:w-[390px] h-[60px] 2xl:h-[90px] bg-blue01 rounded"
+				>
 					New Specials
 				</button>
 			</nav>
-			<div class="bg-white rounded flex flex-col items-center">
+			<div
+				class="bg-white rounded flex flex-col items-center 2xl:grid 2xl:grid-cols-[370px_repeat(3,auto)] 2xl:grid-rows-[auto_auto] 2xl:pt-[50px] 2xl:px-[50px]"
+			>
 				<nav
-					class="text-gray04 text-xl flex flex-col items-center gap-3 pb-[100px]"
+					class="text-gray04 text-xl flex flex-col items-center 2xl:items-start 2xl:self-start gap-3 pb-[100px] 2xl:row-span-full"
 				>
-					<h2 class="text-gray03 font-sansBold text-3xl pt-[50px]">
+					<h2
+						class="text-gray03 font-sansBold text-3xl pt-[50px] 2xl:pt-0"
+					>
 						Let Us Help You
 					</h2>
 					<a href="">Quick Quote</a>
@@ -101,59 +144,77 @@
 					<a href="">Collision Center</a>
 					<a href="">Employment Center</a>
 				</nav>
-				<h2 class="text-gray03 font-sansBold text-3xl">Current Offers</h2>
-				<a href="" class="text-xl pb-[60px] text-gray04"
-					>View all offers</a
+				<header
+					class="pb-[60px] text-center 2xl:col-[2/-1] 2xl:row-[1/2] 2xl:pb-0 justify-self-start 2xl:flex 2xl:items-center 2xl:gap-4"
 				>
+					<h2 class="text-gray03 font-sansBold text-3xl">
+						Current Offers
+					</h2>
+					<a href="" class="text-xl text-gray04">View all offers</a>
+				</header>
 				<article
-					class="text-lg flex flex-col items-center gap-2 pb-[75px]"
+					class="text-lg 2xl:text-2xl flex flex-col items-center 2xl:items-start 2xl:pt-[50px] gap-2 pb-[75px]"
 				>
-					<img src="./src/images/car-1.png" alt="honda accord image" />
-					<p class="font-sansBold text-gray03">
+					<img
+						class="self-center 2xl:h-[135px]"
+						src="./src/images/car-1.png"
+						alt="honda accord image"
+					/>
+					<p class="font-sansBold line-clamp-1 text-gray03">
 						2015 Honda Accord Sedan CVT LX
 					</p>
 					<p class="text-gray03">Lease for $199/mo. for 36 months</p>
 					<a href="" class="text-gray04">See details</a>
 				</article>
 				<article
-					class="text-lg flex flex-col items-center gap-2 pb-[75px]"
+					class="text-lg 2xl:text-2xl flex flex-col items-center 2xl:items-start 2xl:pt-[50px] gap-2 pb-[75px]"
 				>
-					<img src="./src/images/car-2.png" alt="honda accord image" />
-					<p class="font-sansBold text-gray03">
+					<img
+						class="self-center 2xl:h-[135px]"
+						src="./src/images/car-2.png"
+						alt="honda accord image"
+					/>
+					<p class="font-sansBold line-clamp-1 text-gray03">
 						2015 Honda CR-V CVT 2WD LX
 					</p>
 					<p class="text-gray03">Lease for $239/mo. for 39 months</p>
 					<a href="" class="text-gray04">See details</a>
 				</article>
 				<article
-					class="text-lg flex flex-col items-center gap-2 pb-[75px]"
+					class="text-lg 2xl:text-2xl flex flex-col items-center 2xl:items-start 2xl:pt-[50px] gap-2 pb-[75px]"
 				>
-					<img src="./src/images/car-1.png" alt="honda accord image" />
-					<p class="font-sansBold text-gray03">2015 Honda Odyssey LX</p>
+					<img
+						class="self-center 2xl:h-[135px]"
+						src="./src/images/car-3.png"
+						alt="honda accord image"
+					/>
+					<p class="font-sansBold line-clamp-1 text-gray03">
+						2015 Honda Odyssey LX
+					</p>
 					<p class="text-gray03">Lease for $269/mo. for 36 months</p>
 					<a href="" class="text-gray04">See details</a>
 				</article>
 			</div>
 		</main>
 		<section
-			class="h-[560px] md:h-[1072px] bg-gray01 flex flex-col justify-center items-center gap-5"
+			class="h-[560px] md:h-[1072px] 2xl:h-[740px] bg-gray01 flex flex-col 2xl:flex-row justify-center items-center gap-5 2xl:px-[120px]"
 		>
 			<img
 				src="./src/images/promo-newfit.jpg"
 				alt="promotional image of new car"
-				class="w-[340px] md:w-[734px] rounded"
+				class="w-[340px] md:w-[734px] 2xl:w-[815px] rounded"
 			/>
 			<img
 				src="./src/images/promo-leasereturn.jpg"
 				alt="promotional image of lease return"
-				class="w-[340px] md:w-[734px] rounded"
+				class="w-[340px] md:w-[734px] 2xl:w-[815px] rounded"
 			/>
 		</section>
 		<footer>
 			<div
-				class="flex flex-col md:flex-row md:justify-between items-center text-center gap-8 pt-[45px] pb-[55px]"
+				class="flex flex-col md:flex-row md:justify-between items-center text-center gap-8 pt-[45px] pb-[55px] 2xl:px-[120px]"
 			>
-				<p class="text-lg text-gray03 w-[23ch] md:w-fit pl-4">
+				<p class="text-lg text-gray03 w-[25ch] md:w-fit pl-4">
 					© 2015. Your Honda Dealer
 					<a href="" class="md:ml-[15px]">Privacy</a>
 					<span class="px-2">|</span>
@@ -164,46 +225,46 @@
 				</a>
 			</div>
 			<nav
-				class="pt-[50px] pb-[70px] bg-[#017cc2] text-lg text-white px-7 text-center"
+				class="pt-[50px] pb-[70px] bg-[#017cc2] text-lg text-white px-7 text-center 2xl:px-[120px] 2xl:text-start"
 			>
 				<a href="">Accord Coupe</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Accord Sedan</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Civic Coupe</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Civic GX</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Civic Hybrid</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Civic Sedan</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Civic SI Coupe</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Civic SI Sedan</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Crosstour</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">CR-V</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">CR-Z</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Element</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">FXC Clarity</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Fit</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Fit EV</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Insight</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Odyssey</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Pilot</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">Ridgeline</a>
-				<span class="px-[5px]">|</span>
+				<span class="px-[7px]">|</span>
 				<a href="">$2000</a>
 			</nav>
 		</footer>
