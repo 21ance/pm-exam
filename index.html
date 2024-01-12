@@ -11,20 +11,28 @@
 		<title>Honda Dealer</title>
 	</head>
 	<body>
-		<header class="flex justify-center items-center gap-8 h-[148px]">
+		<header
+			class="flex justify-center md:justify-between md:px-[30px] items-center gap-8 md:gap-0 h-[148px]"
+		>
 			<img src="./src/images/header-icon.svg" alt="honda logo" />
-			<div>
-				<div>
-					<p class="text-2xl font-sansBold">Your Honda Dealer</p>
-					<p class="text-2xl">Sales: 000-000-0000</p>
-				</div>
-				<div class="pt-2 flex gap-2">
-					<img src="./src/images/header-socials.png" alt="honda logo" />
-					<button
-						class="w-[100px] text-white bg-gradient-to-t from-[#d5bcbc] to-[#c90000] border-[1px] border-red-500"
-					>
-						Live Chat
-					</button>
+			<div
+				class="flex flex-col md:flex-row md:justify-between md:flex-1 md:items-center"
+			>
+				<p class="text-2xl font-sansBold">Your Honda Dealer</p>
+				<div class="flex flex-col gap-2">
+					<p class="text-2xl font-sansBold">Sales: 000-000-0000</p>
+					<nav class="flex justify-between md:pl-[10px]">
+						<img
+							src="./src/images/header-socials.png"
+							alt="social icons"
+							class="w-fit h-[25px]"
+						/>
+						<button
+							class="w-[100px] h-fit text-sm self-end text-white bg-gradient-to-t from-[#d5bcbc] to-[#c90000] border-[1px] border-red-500"
+						>
+							Live Chat
+						</button>
+					</nav>
 				</div>
 			</div>
 		</header>
@@ -66,16 +74,16 @@
 			<nav
 				class="flex flex-col items-center font-sansBold text-white text-2xl gap-3 pb-[60px]"
 			>
-				<button class="w-[345px] h-[60px] bg-blue01 rounded">
+				<button class="w-[345px] md:w-[722px] h-[60px] bg-blue01 rounded">
 					New Inventory
 				</button>
-				<button class="w-[345px] h-[60px] bg-blue01 rounded">
+				<button class="w-[345px] md:w-[722px] h-[60px] bg-blue01 rounded">
 					Pre-Owned Inventory
 				</button>
-				<button class="w-[345px] h-[60px] bg-blue01 rounded">
+				<button class="w-[345px] md:w-[722px] h-[60px] bg-blue01 rounded">
 					Certified Pre-Owned
 				</button>
-				<button class="w-[345px] h-[60px] bg-blue01 rounded">
+				<button class="w-[345px] md:w-[722px] h-[60px] bg-blue01 rounded">
 					New Specials
 				</button>
 			</nav>
@@ -128,30 +136,30 @@
 			</div>
 		</main>
 		<section
-			class="h-[560px] bg-gray01 flex flex-col justify-center items-center gap-5"
+			class="h-[560px] md:h-[1072px] bg-gray01 flex flex-col justify-center items-center gap-5"
 		>
 			<img
 				src="./src/images/promo-newfit.jpg"
 				alt="promotional image of new car"
-				class="w-[340px]"
+				class="w-[340px] md:w-[734px] rounded"
 			/>
 			<img
-				src="./src/images/promo-leasereturn.png"
+				src="./src/images/promo-leasereturn.jpg"
 				alt="promotional image of lease return"
-				class="w-[340px]"
+				class="w-[340px] md:w-[734px] rounded"
 			/>
 		</section>
 		<footer>
 			<div
-				class="flex flex-col items-center text-center gap-8 pt-[45px] pb-[55px]"
+				class="flex flex-col md:flex-row md:justify-between items-center text-center gap-8 pt-[45px] pb-[55px]"
 			>
-				<p class="text-lg text-gray03 w-[23ch]">
+				<p class="text-lg text-gray03 w-[23ch] md:w-fit pl-4">
 					© 2015. Your Honda Dealer
-					<a href="">Privacy</a>
+					<a href="" class="md:ml-[15px]">Privacy</a>
 					<span class="px-2">|</span>
 					<a href="">Contact Us</a>
 				</p>
-				<a href="">
+				<a href="" class="pr-[30px]">
 					<img src="./src/images/pm-logo.png" alt="pixel motion logo" />
 				</a>
 			</div>
@@ -159,43 +167,43 @@
 				class="pt-[50px] pb-[70px] bg-[#017cc2] text-lg text-white px-7 text-center"
 			>
 				<a href="">Accord Coupe</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Accord Sedan</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Civic Coupe</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Civic GX</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Civic Hybrid</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Civic Sedan</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Civic SI Coupe</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Civic SI Sedan</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Crosstour</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">CR-V</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">CR-Z</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Element</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">FXC Clarity</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Fit</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Fit EV</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Insight</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Odyssey</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Pilot</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">Ridgeline</a>
-				<span class="px-1">|</span>
+				<span class="px-[5px]">|</span>
 				<a href="">$2000</a>
 			</nav>
 		</footer>
