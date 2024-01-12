@@ -16,3 +16,31 @@
 	font-family: "Source Sans Bold";
 	src: url("./src/fonts/SourceSans3-Bold.ttf");
 }
+
+a:hover {
+	color: rgb(59 130 246);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	transition-duration: 75ms;
+}
+
+footer a:hover {
+	color: rgb(50, 51, 53);
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	transition-duration: 75ms;
+}
+
+button:hover {
+	transition-duration: 200ms;
+	transform: scale(1.02);
+}
+
+.fade {
+	opacity: 0;
+	transition: all 1s;
+}
+
+.show {
+	opacity: 1;
+}

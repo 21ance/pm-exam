@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="./style.css" />
+		<script defer src="./script.js"></script>
 		<link rel="icon" type="image/x-icon" href="./public/header-icon.svg" />
 		<meta
 			name="viewport"
@@ -10,7 +11,7 @@
 		/>
 		<title>Honda Dealer</title>
 	</head>
-	<body>
+	<body class="fade">
 		<header
 			class="flex justify-center md:justify-between md:px-[30px] items-center gap-8 md:gap-0 h-[148px] 2xl:px-[120px]"
 		>
@@ -59,9 +60,24 @@
 		<nav
 			class="bg-gray01 h-[50px] flex justify-end items-center 2xl:px-[120px] uppercase text-white 2xl:hidden"
 		>
-			<button class="mr-[18px]">
+			<button class="mr-[18px]" id="burgerMenu">
 				<img src="./src/images/burger-menu.svg" alt="burger menu" />
 			</button>
+		</nav>
+		<nav
+			id="mobileNav"
+			class="flex hidden flex-col absolute capitalize gap-1 items-center w-full bg-white z-20 rounded-b text-lg fade"
+		>
+			<a href="">home</a>
+			<a href="">inventory</a>
+			<a href="">specials</a>
+			<a href="">finance</a>
+			<a href="">service</a>
+			<a href="">parts</a>
+			<a href="">collision center</a>
+			<a href="">dealership</a>
+			<a href="">contact us</a>
+			<a href="">map</a>
 		</nav>
 		<section
 			class="text-gray01 flex flex-col items-center h-[375px] 2xl:h-[500px] relative leading-tight 2xl:px-[120px] 2xl:items-start"
@@ -77,12 +93,12 @@
 				Let our family help you find the perfect vehicle for your family.
 			</p>
 			<button
-				class="text-lg text-white bg-blue01 h-[50px] 2xl:h-[60px] w-[228px] 2xl:w-[280px] flex justify-center items-center rounded font-bold mt-3 z-10 2xl:text-[24px]"
+				class="text-lg text-white bg-blue01 h-[50px] 2xl:h-[60px] w-[228px] 2xl:w-[280px] flex justify-center items-center rounded font-bold mt-3 z-10 2xl:text-[24px] fade"
 			>
 				Search New Inventory
 			</button>
 			<div
-				class="absolute bottom-0 self-center flex justify-end items-end gap-2"
+				class="absolute bottom-0 self-center flex justify-end items-end gap-2 fade"
 			>
 				<img
 					src="./src/images/car.png"
@@ -103,7 +119,7 @@
 			class="bg-gray02 pt-[25px] pb-[45px] 2xl:pt-[65px] 2xl:pb-[110px] px-[15px] 2xl:px-[120px]"
 		>
 			<nav
-				class="flex flex-col 2xl:flex-row items-center font-sansBold text-white text-2xl 2xl:text-3xl gap-3 2xl:gap-[30px] pb-[60px] 2xl:pb-[75px]"
+				class="flex flex-col 2xl:flex-row items-center font-sansBold text-white text-2xl 2xl:text-3xl gap-3 2xl:gap-[30px] pb-[60px] 2xl:pb-[75px] fade"
 			>
 				<button
 					class="w-[345px] md:w-[722px] 2xl:w-[390px] h-[60px] 2xl:h-[90px] bg-blue01 rounded"
@@ -130,7 +146,7 @@
 				class="bg-white rounded flex flex-col items-center 2xl:grid 2xl:grid-cols-[370px_repeat(3,auto)] 2xl:grid-rows-[auto_auto] 2xl:pt-[50px] 2xl:px-[50px]"
 			>
 				<nav
-					class="text-gray04 text-xl flex flex-col items-center 2xl:items-start 2xl:self-start gap-3 pb-[100px] 2xl:row-span-full"
+					class="text-gray04 text-xl flex flex-col items-center 2xl:items-start 2xl:self-start gap-3 pb-[100px] 2xl:row-span-full fade"
 				>
 					<h2
 						class="text-gray03 font-sansBold text-3xl pt-[50px] 2xl:pt-0"
@@ -145,7 +161,7 @@
 					<a href="">Employment Center</a>
 				</nav>
 				<header
-					class="pb-[60px] text-center 2xl:col-[2/-1] 2xl:row-[1/2] 2xl:pb-0 justify-self-start 2xl:flex 2xl:items-center 2xl:gap-4"
+					class="pb-[60px] text-center 2xl:col-[2/-1] 2xl:row-[1/2] 2xl:pb-0 justify-self-start 2xl:flex 2xl:items-center 2xl:gap-4 fade"
 				>
 					<h2 class="text-gray03 font-sansBold text-3xl">
 						Current Offers
@@ -153,7 +169,7 @@
 					<a href="" class="text-xl text-gray04">View all offers</a>
 				</header>
 				<article
-					class="text-lg 2xl:text-2xl flex flex-col items-center 2xl:items-start 2xl:pt-[50px] gap-2 pb-[75px]"
+					class="2xl:w-[350px] text-lg 2xl:text-2xl flex flex-col items-center 2xl:items-start 2xl:pt-[50px] gap-2 pb-[75px] fade"
 				>
 					<img
 						class="self-center 2xl:h-[135px]"
@@ -167,7 +183,7 @@
 					<a href="" class="text-gray04">See details</a>
 				</article>
 				<article
-					class="text-lg 2xl:text-2xl flex flex-col items-center 2xl:items-start 2xl:pt-[50px] gap-2 pb-[75px]"
+					class="2xl:w-[350px] text-lg 2xl:text-2xl flex flex-col items-center 2xl:items-start 2xl:pt-[50px] gap-2 pb-[75px] fade"
 				>
 					<img
 						class="self-center 2xl:h-[135px]"
@@ -181,7 +197,7 @@
 					<a href="" class="text-gray04">See details</a>
 				</article>
 				<article
-					class="text-lg 2xl:text-2xl flex flex-col items-center 2xl:items-start 2xl:pt-[50px] gap-2 pb-[75px]"
+					class="2xl:w-[350px] text-lg 2xl:text-2xl flex flex-col items-center 2xl:items-start 2xl:pt-[50px] gap-2 pb-[75px] fade"
 				>
 					<img
 						class="self-center 2xl:h-[135px]"
@@ -202,30 +218,30 @@
 			<img
 				src="./src/images/promo-newfit.jpg"
 				alt="promotional image of new car"
-				class="w-[340px] md:w-[734px] 2xl:w-[815px] rounded"
+				class="w-[340px] md:w-[734px] 2xl:w-[815px] rounded fade"
 			/>
 			<img
 				src="./src/images/promo-leasereturn.jpg"
 				alt="promotional image of lease return"
-				class="w-[340px] md:w-[734px] 2xl:w-[815px] rounded"
+				class="w-[340px] md:w-[734px] 2xl:w-[815px] rounded fade"
 			/>
 		</section>
 		<footer>
 			<div
 				class="flex flex-col md:flex-row md:justify-between items-center text-center gap-8 pt-[45px] pb-[55px] 2xl:px-[120px]"
 			>
-				<p class="text-lg text-gray03 w-[25ch] md:w-fit pl-4">
+				<p class="text-lg text-gray03 w-[25ch] md:w-fit pl-4 fade">
 					© 2015. Your Honda Dealer
 					<a href="" class="md:ml-[15px]">Privacy</a>
 					<span class="px-2">|</span>
 					<a href="">Contact Us</a>
 				</p>
-				<a href="" class="pr-[30px]">
+				<a href="" class="pr-[30px] fade">
 					<img src="./src/images/pm-logo.png" alt="pixel motion logo" />
 				</a>
 			</div>
 			<nav
-				class="pt-[50px] pb-[70px] bg-[#017cc2] text-lg text-white px-7 text-center 2xl:px-[120px] 2xl:text-start"
+				class="pt-[50px] pb-[70px] bg-[#017cc2] text-lg text-white px-7 text-center 2xl:px-[120px] 2xl:text-start fade"
 			>
 				<a href="">Accord Coupe</a>
 				<span class="px-[7px]">|</span>
